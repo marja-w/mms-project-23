@@ -17,7 +17,7 @@ One of the reasons why Spotify is so successful is its recommendation system. It
 On the one side, there are the listeners, but Spotify is also a tool for music creators to showcase their work. The success of new music on Spotify heavily depends on the algorithm that recommends music to a user (2). Yet, the complexity of the recommender system of Spotify might reduce the understandability of the process for new artists.
 
 
-In my project I want to create an explainable music recommender system, as close to the recommender system by Spotify. The goal is to create a model like the original Spotify recommender system, to be able to explain the algorithm and create a comprehensive summary for artists. In addition, I want to evaluate the model and compare it to the results achieved by the Spotify one. The evaluation should yield results on which features are most important for new songs to be recommended to users.
+In my project I want to create an explainable music recommender system, as close to the recommender system by Spotify. The goal is to create a model like the original Spotify recommender system, to be able to explain the algorithm and create a comprehensive summary for artists. I want to evaluate the model on the [Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) and find out which features are important for creating a successful recommendation. For this, I want to create several models, that only see parts of the features and compare which one performs the best.
 
 ## Schedule
 - 12th – 26th October: Research task and research current Recommender System algorithms
