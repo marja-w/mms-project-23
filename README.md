@@ -20,7 +20,7 @@ On the one side, there are the listeners, but Spotify is also a tool for music c
 In my project I want to create an explainable music recommender system, as close to the recommender system by Spotify. The goal is to create a model like the original Spotify recommender system, to be able to explain the algorithm and create a comprehensive summary for artists. In addition, I want to evaluate the model and compare it to the results achieved by the Spotify one. The evaluation should yield results on which features are most important for new songs to be recommended to users.
 
 ## Schedule
-- 12th – 26th October: Research task and research currently Recommender Systems algorithms
+- 12th – 26th October: Research task and research current Recommender System algorithms
 - 26th October – 9th November: train and fine-tune model (using [million playlist dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)) 
 - 9th – 23rd November: evaluate model with test data (from [million playlist dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)) 
 - 23rd – 4th December: analyze the important features for better recommendation results 
@@ -33,6 +33,16 @@ In my project I want to create an explainable music recommender system, as close
 
 - [Spotify Recommender System Algorithm](https://github.com/marja-w/mms-project-23/blob/main/spotify_recommender_system.md)
 
+### Project Update
+
+Progress:
+
+- identified Spotifys algorithm
+- 
+
+Adjustments requested to proposal:
+
+- 
 
 ## Sources
 
