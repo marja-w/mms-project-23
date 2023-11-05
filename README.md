@@ -1,10 +1,9 @@
 # Multimedia Systems Project Website
 
-- [Proposal](https://github.com/marja-w/mms-project-23/main/README.md#proposal)
-- Schedule
-- Updates
-- Sources
-
+- [Proposal](https://github.com/marja-w/mms-project-23/blob/main/README.md#proposal)
+- [Schedule](https://github.com/marja-w/mms-project-23/blob/main/README.md#schedule)
+- [Updates](https://github.com/marja-w/mms-project-23/blob/main/README.md#updates)
+- [Sources](https://github.com/marja-w/mms-project-23/blob/main/README.md#sources)
 
 
 ## Proposal
@@ -31,7 +30,7 @@ In my project I want to create an explainable music recommender system, as close
 
 ## Updates
 
-## test
+## Sources
 
 (1) https://www.businessofapps.com/data/spotify-statistics/#:~:text=Spotify%20is%20the%20world's%20biggest%20music%20streaming%20platform%20by%20number%20of%20subscribers 
 
