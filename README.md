@@ -32,18 +32,24 @@ In my project I want to create an explainable music recommender system, as close
 - Task Definition: the task the model will be evaluated on is the task of **automatic playlist continuation**. This means, given a set of playlist features, like name or number of including different albums, generate a list of soundtracks that can continue the playlist to the users liking. The Million Playlist Dataset (MLP) is divided into a train and test set, where the test set is incomplete, in order to be able to test the model.
 - [Spotify Recommender System Algorithm](https://github.com/marja-w/mms-project-23/blob/main/spotify_recommender_system.md)
 - [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): python client for Spotify Web API which enables fetching data and querying Spotify's catalog for songs
-- 
 
 ### Project Update
 
 Progress:
+- identified Spotifys algorithm: matrix-manipulation+CNN+NLP
+- surveyed [existing systems](https://github.com/search?q=music%20recommandation&type=repositories), I did not find a project that performed matrix manipulation and build a CNN with spectrogram information
+- settled on task of automatic playlist continuation
 
-- identified Spotifys algorithm
-- 
+Remaining Technical Challenges:
+- prepare train and test data using Spotipy and the MLP dataset: how to get audio data for spotify songs and turn into spectrogram input for CNN?
+- build models for recommendation using Python: which library to use for matrix manipulation?
+- evaluate the build model on MPL dataset
 
 Adjustments requested to proposal:
-
-- 
+- raise awareness about which media is used for creating a good recommendation: song attributes of different forms (temporal data like length of song or release date, spectrogram data, artist information, vector data assessed using NLP, ...)
+- the goal is to implement the recommender techniques used in Spotify in a python notebook with focus on matrix manipulation and the CNN-based spectrogram analysis
+- this notebook should explain the techniques and make them more comprehensible for non-experts
+- finally evaluate the model on the MPL dataset on the task of automatic playlist continuation, to provide validity of the used approach
 
 ## Sources
 
