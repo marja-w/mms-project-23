@@ -11,7 +11,7 @@
 - does not recommend songs no one has listened to before: cold start problem
 
 ## Content based filtering
-- anaylze song itself (spectrogram, frequencies over time)
+- analyze song itself (spectrogram, frequencies over time)
 - spectrogram is fed into a convolutional neural network (CNN)
 
 ## Natural Language Processing
