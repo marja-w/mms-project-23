@@ -31,7 +31,7 @@ In my project I want to create an explainable music recommender system, as close
 
 - Task Definition: the task the model will be evaluated on is the task of **automatic playlist continuation**. This means, given a set of playlist features, like name or number of including different albums, generate a list of soundtracks that can continue the playlist to the users liking. The Million Playlist Dataset (MLP) is divided into a train and test set, where the test set is incomplete, in order to be able to test the model.
 
-- Algorithms: Spotify 
+- [Spotify Recommender System Algorithm](spotify-recommender-system)
 
 
 ## Sources
