@@ -1,17 +1,28 @@
-### Full script code below ###
+### Disclaimer ###
+### this code was taken from the notebook that can be found here:
+### https://github.com/enjuichang/PracticalDataScience-ENCA/tree/main
+### and adapted
+
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
-import re 
+import re
+import os
 
 def ari_to_features(ari):
 
-    with open("secret.txt") as f:
+    with open("../secret.txt") as f:
         secret_ls = f.readlines()
         cid = secret_ls[0][:-2]
         secret = secret_ls[1]
 
+    os.environ["SPOTIPY_CLIENT_ID"] = cid
+    os.environ["SPOTIPY_CLIENT_SECRET"] = secret
+
+    print(os.getenv("SPOTIPY_CLIENT_ID"))
+    print(os.getenv("SPOTIPY_CLIENT_SECRET"))
+
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
-    sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
+    sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
     
     #Audio features
     features = sp.audio_features(ari)[0]
