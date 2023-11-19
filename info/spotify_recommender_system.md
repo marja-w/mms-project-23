@@ -34,8 +34,6 @@ The spectrogram is then fed into a convolutional neural network (CNN). A CNN is 
 
 After the convolution, a pooling layer can be implemented. There are different types of pooling, for example average and max pooling. Using a max pooling layer means that the features are again convolved, but this time the maximum is computed from the current filter zone. Finally, the output matrices of the feature extraction component are flattened and used as input for a fully connected layer, which computes the final output.
 
-After the convolution and pooling layers, the output is flattened in order to feed it into the classification component. This architecture is a fully-connected layer neural network, with a task-specific activation layer in the end. As we can see, the main difference between an artificial neural network and a CNN is the convolution and pooling procedure, which extracts features from the image.
-
 Since a spectrogram is essentially an image of the audio, we can use the CNN architecture to analyze it and and predict song features like loudness or beats per minute. More information about the different features that Spotify uses can be found here: [Spotify API - Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-several-audio-features). Since this analysis does not depend on any user data, it can be performed on completely new songs. 
 
 ## Natural Language Processing
