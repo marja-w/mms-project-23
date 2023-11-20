@@ -33,11 +33,15 @@ publicly available [here](https://github.com/enjuichang/PracticalDataScience-ENC
 
 ## Updates
 
-### 26th October Update
+### 20th November Update
 
-- Task Definition: the task the model will be evaluated on is the task of **automatic playlist continuation**. This means, given a set of playlist features, like name or number of including different albums, generate a list of soundtracks that can continue the playlist to the users liking. The Million Playlist Dataset (MLP) is divided into a train and test set, where the test set is incomplete, in order to be able to test the model.
-- [Spotify Recommender System Algorithm](https://github.com/marja-w/mms-project-23/blob/main/spotify_recommender_system.md)
-- [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): python client for Spotify Web API which enables fetching data and querying Spotify's catalog for songs
+Progress:
+- updated the information about [Spotify's Recommender algorithm](https://github.com/marja-w/mms-project-23/blob/main/info/spotify_recommender_system.md) to include more information about CNNs
+- found [helpful notebooks](https://github.com/enjuichang/PracticalDataScience-ENCA/blob/main/notebooks/content_based_recsys.ipynb) and started on adapting those for my project
+- added [collaborative filtering notebook](https://github.com/marja-w/mms-project-23/blob/main/recommender_model/collaborative_filtering.ipynb)
+
+Remaining Technical Challenges:
+- the library spotipy has an authentication process that needs to be implemented in order to use it. So far I have not been able to run [ari.py](https://github.com/marja-w/mms-project-23/blob/main/recommender_model/scripts/ari.py), because I receive an authentication error. I have followed the instructions on how to set up a Spotify App and include my client id and secret, but the process is not working so far.
 
 ### Project Update
 
@@ -56,6 +60,12 @@ Adjustments requested to proposal:
 - the goal is to implement the recommender techniques used in Spotify in a python notebook with focus on matrix manipulation and the CNN-based spectrogram analysis
 - this notebook should explain the techniques and make them more comprehensible for non-experts
 - finally evaluate the model on the MPL dataset on the task of automatic playlist continuation, to provide validity of the used approach
+
+### 26th October Update
+
+- Task Definition: the task the model will be evaluated on is the task of **automatic playlist continuation**. This means, given a set of playlist features, like name or number of including different albums, generate a list of soundtracks that can continue the playlist to the users liking. The Million Playlist Dataset (MLP) is divided into a train and test set, where the test set is incomplete, in order to be able to test the model.
+- [Spotify Recommender System Algorithm](https://github.com/marja-w/mms-project-23/blob/main/info/spotify_recommender_system.md)
+- [Spotipy](https://spotipy.readthedocs.io/en/2.16.1/): python client for Spotify Web API which enables fetching data and querying Spotify's catalog for songs
 
 ## Sources
 
