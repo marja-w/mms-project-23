@@ -1,11 +1,14 @@
-# Multimedia Systems Project Website
+# Spotify's Recommender System
 
+## Overview
+
+- [Project Video]()
+- [Background](info/spotify_recommender_system.md)
+- [Implementation and Notebooks](recommender_model/README.md)
 - [Proposal](https://github.com/marja-w/mms-project-23/blob/main/README.md#proposal)
-- [Documentation](https://github.com/marja-w/mms-project-23/blob/main/README.md#documentation)
 - [Schedule](https://github.com/marja-w/mms-project-23/blob/main/README.md#schedule)
 - [Updates](https://github.com/marja-w/mms-project-23/blob/main/README.md#updates)
 - [Sources](https://github.com/marja-w/mms-project-23/blob/main/README.md#sources)
-
 
 ## Proposal
 
@@ -20,10 +23,6 @@ On the one side, there are the listeners, but Spotify is also a tool for music c
 
 In my project I want to create an explainable music recommender system, as close to the recommender system by Spotify. The goal is to create a model like the original Spotify recommender system, to be able to explain the algorithm and create a comprehensive summary for artists. I want to evaluate the model on the [Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge).
 
-## Documentation
-
-**Disclaimer: the notebooks about preprocessing and content based prediction are heavily based off the notebooks
-publicly available [here](https://github.com/enjuichang/PracticalDataScience-ENCA/tree/main)**
 
 ## Schedule
 - 12th – 26th October: Research task and research current Recommender System algorithms
