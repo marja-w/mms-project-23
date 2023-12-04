@@ -1,6 +1,5 @@
 extract_features.ipynb
 scripts/ari.py
-scripts/data_handling.py
 scripts/load_data.py
 data/raw_data_test.csv
 data/raw_data_train.csv
