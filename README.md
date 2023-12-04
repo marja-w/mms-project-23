@@ -2,7 +2,7 @@
 
 ## Overview
 
-- [Project Video]()
+- [Project Video](https://youtu.be/WxESUYrsQrM)
 - [Background](info/spotify_recommender_system.md)
 - [Implementation and Notebooks](recommender_model/README.md)
 - [Proposal](https://github.com/marja-w/mms-project-23/blob/main/README.md#proposal)
