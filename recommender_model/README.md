@@ -38,8 +38,6 @@ the train-test split I used. This script uses those files and creates:
 
 which is needed for the [evaluation.ipynb](evaluation.ipynb) script.
 
-## Data
-
 We have a dataset of 67499 entries
 
 - Playlists: 869 
