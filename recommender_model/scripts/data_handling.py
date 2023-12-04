@@ -1,4 +1,5 @@
 # methods from content_based_recsys.ipynb
+import random
 
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
@@ -85,3 +86,40 @@ def get_features(df: pd.DataFrame) -> pd.DataFrame:
     song_df = drop_duplicates(playlist_df)
     song_df = select_cols(song_df)
     song_df = genre_preprocess(song_df)
+
+if __name__ == '__main__':
+    # look at data statistics
+    df = pd.read_csv("../data/processed_data.csv")
+    print(f"We have a dataset of {len(df)} entries")
+
+    # create sorted data
+    df.sort_values("name", inplace=True)
+
+    num_playlists = df["name"].nunique()  # count distinct values, this is the number of playlists
+    num_tracks = df["track_name"].nunique()  # count distinct values, this is the number of tracks
+    print(f"Playlists: {num_playlists} \nTracks: {num_tracks}")
+
+    # group by playlist
+    playlists = df.groupby('name')["track_name"].apply(list)
+
+    # divide into 90% train and 10% test data
+    test_data_per = 0.1
+    train_data = list()
+    test_data = list()
+
+    for playlist in list(playlists.index):  # loop through all playlists
+        if random.random() > test_data_per:  # in 90% of cases
+            for idx, song in df[df["name"] == playlist].iterrows():
+                train_data.append(song)
+        else:
+            for idx, song in df[df["name"] == playlist].iterrows():
+                test_data.append(song)
+
+    # convert to dataframes and store
+    pd.DataFrame(train_data).to_csv("../data/processed_data_train.csv")
+    pd.DataFrame(test_data).to_csv("../data/processed_data_test.csv")
+
+    print(f"Train data points: {len(train_data)}")
+    print(f"Test data points: {len(test_data)}")
+
+
