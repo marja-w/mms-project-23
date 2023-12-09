@@ -1,3 +1,6 @@
+# the implementation was found here:
+# https://albertauyeung.github.io/2017/04/23/python-matrix-factorization.html/#a-simple-implementation-in-python
+
 import numpy as np
 
 class MF():
