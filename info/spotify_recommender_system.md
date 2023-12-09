@@ -17,6 +17,12 @@ The matrix R is now transformed to two matrices, the preference matrix P and con
 
 [Weighted Matrix Factorization](https://tryolabs.com/blog/introduction-to-recommender-systems#:~:text=matrix%20factorization) factorizes the original matrix R into User and Item Matrix. The algorithm tries to approximate the original values in R as close as possible, while it is doing so, it fills empty values in R, which can be used for recommending new songs to users.
 
+To find those matrices, they are first initialized randomly, and then iteratively improved according to a criterion. This process is called gradient descent. The criterion is the difference of the product $P \times C$ to the original matrix $R$. The error is calculated with below equation, also called the mean squared error (MSE).
+
+![image](https://github.com/marja-w/mms-project-23/assets/58331624/0e06bc5d-3b6e-4674-bb8d-4d38a5eac7a3)
+
+Then, the gradient at each value is calculated, which is essentially the differentiation of the MSE function for every point in the matrix. Finally, each point in the matrices is updated by adding the gradient. This process is repeated for a certain amount of iterations or until the error has reached a certain threshold.
+
 To sum it up, Spotify basically uses your listening data and the one of the other users in order to find similarities and recommend songs. The problem with this approach is that no new songs, songs no user has ever listened to, will be recommended, also known as the cold start problem. This is why Spotify uses two additional techniques for recommendation.
 
 ## Content based filtering
