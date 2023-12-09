@@ -1,8 +1,6 @@
 # Spotifys Recommender System
 
-- Bandits for Recommendations as Treatments (BaRT)
-- collaborative and content-based filtering
-- also uses NLP to analyze news, articles, blogs about songs and artists (for weekly playlist)
+Spotify’s algorithm uses matrix manipulation (MM) for collaborative filtering, convolutional neural networks (CNNs) for content based filtering, and natural language processing (NLP) for identifying cultural relevance of new songs.
 
 ## Collaborative filtering
 This technique uses information about other users in order to create a recommendation. For example, if two users listen to a lot of the same songs, Spotify will recommend songs that one of them listens to the other, if the other user has not listened to that song yet. This is similar to Netflixs' "You may also like" or Amazons' "Customers have also bought" recommendations.
@@ -43,9 +41,14 @@ After the convolution, a pooling layer can be implemented. There are different t
 Since a spectrogram is essentially an image of the audio, we can use the CNN architecture to analyze it and and predict song features like loudness or beats per minute. More information about the different features that Spotify uses can be found here: [Spotify API - Audio Features](https://developer.spotify.com/documentation/web-api/reference/get-several-audio-features). Since this analysis does not depend on any user data, it can be performed on completely new songs. 
 
 ## Natural Language Processing
-- scan internet to find articles, blogs, and online reviews talking about artists and songs
-- use the descriptors used in those to compute importance of artist or song and generate "cultural vectors" with weight
-- the terms associated with the cultural vectors for a song or artist are used to compare similarity between artists and songs a user listens to and freshly released music
+Spotify also uses NLP to find out popular new songs and artists. They scan online articles, blogs, and reviews, and perform NLP tasks like semantic analysis on them. By doing so, they generate "cultural vectors" for artists and songs. Those are then used to find similarities between songs a user listens to and freshly released music, similar to the collaborative filtering approach. 
+
+[An example](https://medium.com/@sophiaciocca/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe) of terms correlated with the swedish pop band "ABBA":
+
+![image](https://github.com/marja-w/mms-project-23/assets/58331624/110bf1b3-d668-4a21-9e3b-eb648bbd752b)
+
+This approach is mainly used for generating the weekly playlists that Spotify generates, which feature new songs and upcoming artists.
+
 
 # Sources
 1. [Recommending music on Spotify with deep learning](https://sander.ai/2014/08/05/spotify-cnns.html)
