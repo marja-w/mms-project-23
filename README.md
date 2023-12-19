@@ -2,6 +2,7 @@
 
 ## Overview
 
+- [Project Report](info/mms_project_report.pdf)
 - [Project Video](https://youtu.be/Xb6s0YZ436A)
 - [Background](info/spotify_recommender_system.md)
 - [Implementation and Notebooks](recommender_model/README.md)
